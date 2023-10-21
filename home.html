@@ -3,21 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio</title>
+    <title>Richardo - RevoU</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
-    <!-- NAVBAR START -->
-    <header class="header">
+    <!-- NAVBAR/HEADER START -->
+    <header id="home" class="header">
       <div class="nav-logo">
         <img src="assets/logo.png" alt="logo">
       </div>
-      <div class="nav">Navigation</div>
+      <nav class="nav">
+        <a href="#home" class="nav-item">Home</a>
+        <a href="#our-profile" class="nav-item">Our Profile</a>
+        <a href="#portofolio" class="nav-item">Portofolio</a>
+        <a href="#message-us" class="nav-item">Message Us</a>
+      </nav>
     </header>
-    <!-- NAVBAR END -->
+    <!-- NAVBAR/HEADER END -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- Section START -->
+    <section id="our-profile" class="banner">
+      <div class="greetings">
+        <h1>Hi, My name is Richardo</h1>
+        <p>Ini adalah latihan website pertama</p>
+      </div>
+    </section>
+    <!-- Section END -->
+
+    <!-- Section 2 START -->
+    <div class="container">
+    <section id="portofolio" class="headquarters">
+      <h1>Our headquarters</h1>
+      <div class="hq-items">
+        <div class="circle">
+          <h1 class="h1-circle">Jakarta</h1>
+        </div>
+        <div class="circle">
+          <h1 class="h1-circle">Bandung</h1>
+        </div>
+        <div class="circle">
+          <h1 class="h1-circle">Surabaya</h1>
+        </div>
+      </div>
+    </section>
+    </div>
+    <!-- Section 2 END -->
+
+    <!-- FORM START -->
+    <div class="form">
+    <section id="message-us" class="form">
+      <div class="form-left"></div>
+      <h1>Message Us</h1>
+        <form>
+          <table>
+            <td>Nama</td>
+            <td>:</td>
+            <td>
+              <input id="nama" name="nama" type="text" placeholder="Nama">
+            </td>
+          </table>
+        </form>
+        <form>
+        <form>
+          <table>
+            <td>Tanggal Lahir</td>
+            <td>:</td>
+            <td>
+              <input id="nama" name="tgl_lahir" type="date">
+            </td>
+          </table>
+        </form>
+        <form>
+          <label>Jenis Kelamin:</label>
+          <input type="radio" id="laki-laki" name="jenis_kelamin" value="laki-laki">
+          <label for="laki-laki">Laki-Laki</label>
+          <input type="radio" id="perempuan" name="jenis_kelamin" value="perempuan">
+          <label for="perempuan">Perempuan</label>
+          <br><br>
+      </form>
+      <form class="pesan">
+        <label for="pesan">Pesan:</label>
+        <textarea id="pesan" name="pesan" rows="4" cols="50" placeholder="Tulis pesan Anda di sini..."></textarea>
+        <br><br>
+      </form>
+      <form class="form-submit">
+        <input class="submit" type="button" value="Submit">
+      </form>
+      <div class="form-right">
+        <p>Current time: Fri 17 2022 11:27:28 GMT+0100</h1>
+        <p>Nama: Richardo Yehezkiel Silalahi</h1>
+        <p>Tanggal Lahir: 28/04/2023</h1>
+        <p>jenis kelamin: Laki-laki</h1>
+        <p>Pesan: Lagi belajar website</h1>
+      </div>
+    </section>
+    </div>
+    <!-- FORM END -->
+
+    <!-- FOOTER START -->
+    <footer class="footer">
+      <center>
+        <p class="footer-text">made by Richardo</p>
+      </center>
+    </footer>
+    <!-- FOOTER END -->
+
+
+    <!-- SCRIPT -->
     <script src="./js/script.js"></script>
 
 </body>
