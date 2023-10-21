@@ -1,0 +1,10 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em 2em;
+    border-bottom: 1px solid darkslategray;
+}
+
+.nav-logo img {
+    max-height: 100px;
+}
