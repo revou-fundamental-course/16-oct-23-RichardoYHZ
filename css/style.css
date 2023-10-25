@@ -5,9 +5,10 @@
     box-sizing: border-box;
 }
 
-body {
+html, body {
     background: #1a1a1a;
     color: #fff;
+    scroll-behavior: smooth;
 }
 
 /* ------------- NAVBAR -------------- */
@@ -365,6 +366,12 @@ form input, form textarea {
     padding: 25px;
     font-weight: 300;
     margin-top: 20px;
+}
+
+#msg {
+    color: #61b752;
+    margin-top: 10px;
+    display: block;
 }
 
 /* ------------- RESPONSIVE MOBILE -------------- */
