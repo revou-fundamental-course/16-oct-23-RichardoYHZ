@@ -4,113 +4,159 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Richardo - RevoU</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <!-- NAVBAR/HEADER START -->
-    <header id="home" class="header">
-      <div class="nav-logo">
-        <img src="assets/logo.png" alt="logo">
-      </div>
-      <nav class="nav">
-        <a href="#home" class="nav-item">Home</a>
-        <a href="#our-profile" class="nav-item">Our Profile</a>
-        <a href="#portofolio" class="nav-item">Portofolio</a>
-        <a href="#message-us" class="nav-item">Message Us</a>
-      </nav>
-    </header>
-    <!-- NAVBAR/HEADER END -->
+    <!-- ------------- NAVBAR p START -------------- -->
+    <div id="home" class="container-navbar">
+      <header class="header">
+        <div class="logo">
+          <img class="img-logo" src="assets/logo.png" alt="logo">
+        </div>
 
-    <!-- Section START -->
-    <section id="our-profile" class="banner">
-      <div class="greetings">
-        <h1>Hi, My name is Richardo</h1>
-        <p>Ini adalah latihan website pertama</p>
+        
+        <i class='bx bx-menu' id="menu-icon"></i>
+        
+        <nav id="home" class="navbar">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#headquarters">Headquarters</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+      <div class="nav-bg"></div>
+      <div class="h1-navbar">
+        <h1 class="h1-nb">Hello Guys, Saya Richardo</h1>
+        <p>Selamat Datang di Website Saya</p>
       </div>
-    </section>
-    <!-- Section END -->
-
-    <!-- Section 2 START -->
-    <div class="container">
-    <section id="portofolio" class="headquarters">
-      <h1>Our headquarters</h1>
-      <div class="hq-items">
-        <div class="circle">
-          <h1 class="h1-circle">Jakarta</h1>
-        </div>
-        <div class="circle">
-          <h1 class="h1-circle">Bandung</h1>
-        </div>
-        <div class="circle">
-          <h1 class="h1-circle">Surabaya</h1>
-        </div>
-      </div>
-    </section>
     </div>
-    <!-- Section 2 END -->
+    <!-- ------------- NAVBAR END -------------- -->
 
-    <!-- FORM START -->
-    <div class="form">
-    <section id="message-us" class="form">
-      <div class="form-left"></div>
-      <h1>Message Us</h1>
-        <form>
-          <table>
-            <td>Nama</td>
-            <td>:</td>
-            <td>
-              <input id="nama" name="nama" type="text" placeholder="Nama">
-            </td>
-          </table>
-        </form>
-        <form>
-        <form>
-          <table>
-            <td>Tanggal Lahir</td>
-            <td>:</td>
-            <td>
-              <input id="nama" name="tgl_lahir" type="date">
-            </td>
-          </table>
-        </form>
-        <form>
-          <label>Jenis Kelamin:</label>
-          <input type="radio" id="laki-laki" name="jenis_kelamin" value="laki-laki">
-          <label for="laki-laki">Laki-Laki</label>
-          <input type="radio" id="perempuan" name="jenis_kelamin" value="perempuan">
-          <label for="perempuan">Perempuan</label>
-          <br><br>
-      </form>
-      <form class="pesan">
-        <label for="pesan">Pesan:</label>
-        <textarea id="pesan" name="pesan" rows="4" cols="50" placeholder="Tulis pesan Anda di sini..."></textarea>
-        <br><br>
-      </form>
-      <form class="form-submit">
-        <input class="submit" type="button" value="Submit">
-      </form>
-      <div class="form-right">
-        <p>Current time: Fri 17 2022 11:27:28 GMT+0100</h1>
-        <p>Nama: Richardo Yehezkiel Silalahi</h1>
-        <p>Tanggal Lahir: 28/04/2023</h1>
-        <p>jenis kelamin: Laki-laki</h1>
-        <p>Pesan: Lagi belajar website</h1>
+    <!-- ------------- ABOUT START -------------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="assets/img/me.jpg" alt="jpeg">
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-tittle">About Me</h1>
+            <p>Hallo! Perkenalkan Nama saya Richardo Yehezkiel, Umur Saya 16th. Terimakasih Sudah Melihat-lihat Website saya, Ini Website Pertama Saya.</p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('experience')">Experience</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI?UX</span><br>Designing Web/App interfaces</li>
+                <li><span>Web Development</span><br>Web App Development</li>
+                <li><span>App Development</span><br>Building Android App</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>2022 - Current</span><br>Tiktok Affliate</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2023 - 2026</span><br>SMA Negeri 1 Andam Dewi</li>
+                <li><span>2022 - 2023</span><br>SMP Negeri 1 Andam Dewi</li>
+                <li><span>2020 - 2022</span><br>SMP Negeri 20 Jakarta</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
     </div>
-    <!-- FORM END -->
+      
+    <!-- ------------- ABOUT END -------------- -->
 
-    <!-- FOOTER START -->
-    <footer class="footer">
-      <center>
-        <p class="footer-text">made by Richardo</p>
-      </center>
-    </footer>
-    <!-- FOOTER END -->
+    <!-- ------------- HEADQUARTERS START -------------- -->
+    <div id="headquarters" class="headquarters">
+      <div class="container-headquarters">
+        <div class="row-headquarters">
+          <div>
+            <h2>HEADQUARTERS</h2>
+          </div>
+          <div class="headquarters-thumb">
+            <img src="assets/img/jakarta.jpeg" alt="jpeg">
+            <div class="headquarters-overlay">
+              <h4>JAKARTA</h4>
+            </div>
+          </div>
+          <div class="headquarters-thumb">
+            <img src="assets/img/surabaya.jpeg" alt="jpeg">
+            <div class="headquarters-overlay">
+              <h4>Surabaya</h4>
+            </div>
+          </div>
+          <div class="headquarters-thumb">
+            <img src="assets/img/bandung.jpeg" alt="jpeg">
+            <div class="headquarters-overlay">
+              <h4>Bandung</h4>
+            </div>
+          </div>
+          <div class="headquarters-thumb">
+            <img src="assets/img/medan.jpeg" alt="jpg">
+            <div class="headquarters-overlay">
+              <h4>Medan</h4>
+            </div>
+          </div>
+          <div class="headquarters-thumb">
+            <img src="assets/img/palembang.jpeg" alt="jpg">
+            <div class="headquarters-overlay">
+              <h4>Palembang</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ------------- HEADQUARTERS END -------------- -->
+
+    <!-- ------------- CONTACT START -------------- -->
+    <div id="contact" class="section">
+			<div class="container">
+				<div class="row">
+					<div class="container-left">
+						<address>
+							<h1 class="contact-title">CONTACT ME</h1>
+							<p><i class="bx bx-phone"></i> +62 895-0311-6468</p>
+							<p><i class="bx bxl-telegram"></i> krdoajh@gmail.com</p>
+							<p><i class="bx bx-map"></i> Lobutua, Tapanuli Tengah</p>
+              <div class="social-icons">
+                <a href="https://facebook.com/Richardo-yehezkiel"><i class='bx bxl-facebook'></i></a>
+                <a href="https://github.com/yopevillain"><i class='bx bxl-github'></i></a>
+                <a href="https://instagram.com/kardoxyz"><i class='bx bxl-instagram'></i></a>
+                <a href="https://linkedin.com/Richardo"><i class='bx bxl-linkedin'></i></a>
+              </div>
+						</address>
+					</div>
+					<div class="container-right">
+						<form>
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="email" name="email" placeholder="Your Email" required>
+              <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+              <button type="submit">Submit</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+    <!-- ------------- CONTACT END -------------- -->
+
+    <!-- ------------- FOOTER START -------------- -->
+    <div class="footer">
+      <p>Copyright &copy; 2023 RevoU. Made by Richardo</p>
+    </div>
+    <!-- ------------- FOOTER END -------------- -->
 
 
-    <!-- SCRIPT -->
-    <script src="./js/script.js"></script>
+    <!-- ------------- SCRIPT -------------- -->
+    <script src="js/script.js"></script>
 
 </body>
 </html>
